@@ -303,6 +303,7 @@
     <Content Include="fonts\Roboto-Regular.ttf" />
     <Content Include="fonts\icomoon.ttf" />
     <Content Include="fonts\agency-fb.ttf" />
+    <Content Include="fonts\MuseoSansCyrl-500.otf" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>

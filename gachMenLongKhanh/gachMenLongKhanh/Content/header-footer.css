@@ -33,6 +33,11 @@
     src: url('../fonts/agency-fb.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'MuseoSansCyrl-500';
+    src: url('../fonts/MuseoSansCyrl-500.otf') format('opentype');
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -343,7 +348,7 @@ footer {
             display: none;
         }
 
-        /*Thoong tin công ty và liên hệ*/
+        /*Thông tin công ty và liên hệ*/
         footer > .contact {
             margin: 0;
         }
@@ -358,7 +363,7 @@ footer {
                 width: 100%;
                 padding: 0;
                 background: url(../images/header-footer/logo-co.png) no-repeat;
-                background-size: 28%;
+                background-size: 25%;
                 background-position-x: 3em;
                 background-position-y: 2em;
             }
