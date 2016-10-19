@@ -4,11 +4,21 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Gạch Men Long Khánh</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="~/Content/header-footer.css" rel="stylesheet" />
+    @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">*@
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 
+    <link href="~/Content/header-footer.css" rel="stylesheet" />
+    <link href="~/Content/index.css" rel="stylesheet" />
 
     <script src="~/Scripts/modernizr.custom.js"></script>
+    <style>
+        .fixed {
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+    </style>
+
 </head>
 <body>
     <header>
@@ -118,9 +128,9 @@
         <!--Thông tin công ty-->
         <div class="contact">
             <!--Bản đồ-->
-            <div class="map col-md-8 col-lg-8">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.375720845213!2d106.67178731444253!3d20.856900999000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a6065be8ecb%3A0x213f45542315c88f!2zMTFBIEvDvSBDb24sIFBoYW4gQuG7mWkgQ2jDonUsIEjhu5NuZyBCw6BuZywgSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1476694000719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
+            @*<div class="map col-md-8 col-lg-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3728.375720845213!2d106.67178731444253!3d20.856900999000022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a6065be8ecb%3A0x213f45542315c88f!2zMTFBIEvDvSBDb24sIFBoYW4gQuG7mWkgQ2jDonUsIEjhu5NuZyBCw6BuZywgSOG6o2kgUGjDsm5nLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1476694000719" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>*@
             <!--Thông tin công ty và liên hệ-->
             <div class="info col-md-4 col-lg-4">
                 <p>Liên hệ với chúng tôi</p>
@@ -143,11 +153,34 @@
     </footer>
 
 
-    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    @*<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>*@
+    @*<script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>*@
+    @*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>*@
+
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/jquery-3.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
     <script src="~/Scripts/trangchu/jquery.dlmenu.js"></script>
 
+    <script>
+        $(function () {
 
+            $(window).bind('scroll', function () {
+                var navHeight = $('.mobile').height();
+                if ($(window).scrollTop() > navHeight) {
+                    $('#dl-menu').addClass('fixed');
+                }
+                else {
+                    $('#dl-menu').removeClass('fixed');
+                }
+            });
+
+            $('#dl-menu').dlmenu({
+                animationClasses: { classin: 'dl-animate-in-5', classout: 'dl-animate-out-5' }
+            });
+        });
+    </script>
 
 </body>
 </html>

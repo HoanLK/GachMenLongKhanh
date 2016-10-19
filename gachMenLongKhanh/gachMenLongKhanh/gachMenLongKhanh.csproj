@@ -208,7 +208,9 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\header-footer.css" />
+    <Content Include="Content\index.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -245,6 +247,8 @@
     <Content Include="images\trangchu\product-tranh3d.png" />
     <Content Include="images\trangchu\tamnhin.png" />
     <Content Include="images\trangchu\tuvan.png" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr.custom.js" />
     <Content Include="Scripts\trangchu\jquery.dlmenu.js" />
@@ -298,6 +302,7 @@
     <Content Include="fonts\Roboto-Medium.ttf" />
     <Content Include="fonts\Roboto-Regular.ttf" />
     <Content Include="fonts\icomoon.ttf" />
+    <Content Include="fonts\agency-fb.ttf" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <PropertyGroup>
