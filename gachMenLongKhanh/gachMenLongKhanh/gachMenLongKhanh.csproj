@@ -211,6 +211,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\header-footer.css" />
     <Content Include="Content\index.css" />
+    <Content Include="Content\sanpham.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -229,6 +230,21 @@
     <Content Include="images\header-footer\search-icon.png" />
     <Content Include="images\header-footer\twitter-icon.png" />
     <Content Include="images\header-footer\youtube-icon.png" />
+    <Content Include="images\sanpham\banner-bg.png" />
+    <Content Include="images\sanpham\gachmen-1.png" />
+    <Content Include="images\sanpham\gachmen-2.png" />
+    <Content Include="images\sanpham\gachmen-3.png" />
+    <Content Include="images\sanpham\gachmen-4.png" />
+    <Content Include="images\sanpham\nhatam-1.png" />
+    <Content Include="images\sanpham\nhatam-2.png" />
+    <Content Include="images\sanpham\spnoibat-1.png" />
+    <Content Include="images\sanpham\spnoibat-2.png" />
+    <Content Include="images\sanpham\spnoibat-3.png" />
+    <Content Include="images\sanpham\spnoibat-4.png" />
+    <Content Include="images\sanpham\tranh3d-1.png" />
+    <Content Include="images\sanpham\tranh3d-2.png" />
+    <Content Include="images\sanpham\vesinh-1.png" />
+    <Content Include="images\sanpham\vesinh-2.png" />
     <Content Include="images\trangchu\baivietmoinhat.png" />
     <Content Include="images\trangchu\banner-bg.png" />
     <Content Include="images\trangchu\banner-linestar.png" />
@@ -305,6 +321,7 @@
     <Content Include="fonts\agency-fb.ttf" />
     <Content Include="fonts\MuseoSansCyrl-500.otf" />
     <None Include="Project_Readme.html" />
+    <Content Include="Views\Home\Sanpham.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

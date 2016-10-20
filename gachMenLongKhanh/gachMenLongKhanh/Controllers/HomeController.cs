@@ -26,5 +26,12 @@ namespace gachMenLongKhanh.Controllers
 
             return View();
         }
+
+        public ActionResult Sanpham()
+        {
+            ViewBag.Message = "Your product page.";
+
+            return View();
+        }
     }
 }
