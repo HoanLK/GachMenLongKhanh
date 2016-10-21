@@ -29,7 +29,28 @@ namespace gachMenLongKhanh.Controllers
 
         public ActionResult Sanpham()
         {
+            ViewBag.Message = "Your catalogue page.";
+
+            return View();
+        }
+
+        public ActionResult Loaisanpham()
+        {
             ViewBag.Message = "Your product page.";
+
+            return View();
+        }
+
+        public ActionResult Tuvan()
+        {
+            ViewBag.Message = "Your suicide page.";
+
+            return View();
+        }
+
+        public ActionResult Baiviet()
+        {
+            ViewBag.Message = "Your topic page.";
 
             return View();
         }

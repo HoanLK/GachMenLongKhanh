@@ -6,10 +6,16 @@
     <title>@ViewBag.Title - Gạch Men Long Khánh</title>
     @*<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">*@
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+
 
     <link href="~/Content/header-footer.css" rel="stylesheet" />
     <link href="~/Content/index.css" rel="stylesheet" />
     <link href="~/Content/sanpham.css" rel="stylesheet" />
+    <link href="~/Content/loaisanpham.css" rel="stylesheet" />
+    <link href="~/Content/chitietsanpham.css" rel="stylesheet" />
+    <link href="~/Content/tuvan.css" rel="stylesheet" />
+    <link href="~/Content/baiviet.css" rel="stylesheet" />
 
     <script src="~/Scripts/modernizr.custom.js"></script>
     <style>
@@ -30,13 +36,13 @@
             <!--Menu-->
             <ul class="col-md-8 col-lg-8">
                 <li><a href="@Url.Action("Index","Home")">không gian đẹp</a></li>
-                <li><a href="@Url.Action("Index","Home")">góc tư vấn</a></li>
+                <li><a href="@Url.Action("Tuvan","Home")">góc tư vấn</a></li>
                 <li>
                     <a href="@Url.Action("Sanpham","Home")">sản phẩm</a>
                     <ul>
-                        <li><a href="@Url.Action("Index","Home")">Gạch men cao cấp<img src="~/images/header-footer/menu-sp-1.png" alt="" /></a></li>
-                        <li><a href="@Url.Action("Index","Home")">Thiết bị vệ sinh<img src="~/images/header-footer/menu-sp-2.png" alt="" /></a></li>
-                        <li><a href="@Url.Action("Index","Home")">Thiết bị phòng tắm<img src="~/images/header-footer/menu-sp-3.png" alt="" /></a></li>
+                        <li><a href="@Url.Action("Loaisanpham","Home")">Gạch men cao cấp<img src="~/images/header-footer/menu-sp-1.png" alt="" /></a></li>
+                        <li><a href="@Url.Action("Loaisanpham","Home")">Thiết bị vệ sinh<img src="~/images/header-footer/menu-sp-2.png" alt="" /></a></li>
+                        <li><a href="@Url.Action("Loaisanpham","Home")">Thiết bị phòng tắm<img src="~/images/header-footer/menu-sp-3.png" alt="" /></a></li>
                     </ul>
                 </li>
                 <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
@@ -58,12 +64,12 @@
                     <li>
                         <a href="@Url.Action("Sanpham","Home")">Sản phẩm</a>
                         <ul class="dl-submenu">
-                            <li><a href="@Url.Action("Index","Home")">Gạch men cao cấp</a></li>
-                            <li><a href="@Url.Action("Index","Home")">Thiết bị vệ sinh</a></li>
-                            <li><a href="@Url.Action("Index","Home")">Thiết bị phòng tắm</a></li>
+                            <li><a href="@Url.Action("Loaisanpham","Home")">Gạch men cao cấp</a></li>
+                            <li><a href="@Url.Action("Loaisanpham","Home")">Thiết bị vệ sinh</a></li>
+                            <li><a href="@Url.Action("Loaisanpham","Home")">Thiết bị phòng tắm</a></li>
                         </ul>
                     </li>
-                    <li><a href="@Url.Action("Index","Home")">Góc tư vấn</a></li>
+                    <li><a href="@Url.Action("Tuvan","Home")">Góc tư vấn</a></li>
                     <li><a href="@Url.Action("Index","Home")">Không gian đẹp</a></li>
                 </ul>
             </nav>

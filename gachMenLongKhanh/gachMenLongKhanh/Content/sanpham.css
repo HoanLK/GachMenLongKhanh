@@ -99,8 +99,8 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 display: block;
-                width: 14%;
-                left: 43%;
+                width: 15%;
+                float: right;
                 padding: 0.5em 1em;
                 text-align: center;
                 margin: 1.5em 0;

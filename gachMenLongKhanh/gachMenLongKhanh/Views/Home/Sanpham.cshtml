@@ -3,6 +3,8 @@
     ViewBag.Title = "Sanpham";
 }
 
+@Html.Partial("Chitietsanpham")
+
 <section class="sanpham col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="banner col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <img src="~/images/sanpham/banner-bg.png" alt="" />
@@ -18,25 +20,25 @@
             </div>
             <div class="cacsanpham col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="sp-1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/spnoibat-1.png" alt="" /><br />
                         <p>Bồn cầu vệ sinh hàn quốc</p>
                     </a>
                 </div>
                 <div class="sp-2 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/spnoibat-2.png" alt="" /><br />
                         <p>GMLN - 02</p>
                     </a>
                 </div>
                 <div class="sp-3 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/spnoibat-3.png" alt="" /><br />
                         <p>Bồn tắm nằm kiểu Hàn Quốc</p>
                     </a>
                 </div>
                 <div class="sp-4 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/spnoibat-4.png" alt="" /><br />
                         <p>Bộ tranh 3D 3 bức</p>
                     </a>
@@ -51,7 +53,7 @@
             </div>
             <div class="cacsanpham col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="sp-1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#"  data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/gachmen-1.png" alt="" /><br />
                         <p>
                             <span>gmln - 01</span><br />
@@ -60,7 +62,7 @@
                     </a>
                 </div>
                 <div class="sp-2 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#"  data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/gachmen-2.png" alt="" /><br />
                         <p>
                             <span>gmln - 02</span><br />
@@ -69,7 +71,7 @@
                     </a>
                 </div>
                 <div class="sp-3 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#"  data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/gachmen-3.png" alt="" /><br />
                         <p>
                             <span>gmln - 03</span><br />
@@ -78,7 +80,7 @@
                     </a>
                 </div>
                 <div class="sp-4 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#"  data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/gachmen-4.png" alt="" /><br />
                         <p>
                             <span>gmln - 04</span><br />
@@ -87,7 +89,7 @@
                     </a>
                 </div>
             </div>
-            <a href="#" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Xem thêm</a>
+            <a href="@Url.Action("Loaisanpham","Home")" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Xem thêm</a>
         </div>
 
         <!--Thiết bị vệ sinh-->
@@ -97,31 +99,31 @@
             </div>
             <div class="cacsanpham col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="sp-1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/vesinh-1.png" alt="" /><br />
                         <p>Bồn rửa tay treo tường</p>
                     </a>
                 </div>
                 <div class="sp-2 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#"  data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/vesinh-2.png" alt="" /><br />
                         <p>Bồn cầu vệ sinh Hàn Quốc</p>
                     </a>
                 </div>
                 <div class="sp-3 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#"  data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/vesinh-1.png" alt="" /><br />
                         <p>Bồn rửa tay treo tường</p>
                     </a>
                 </div>
                 <div class="sp-4 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#"  data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/vesinh-2.png" alt="" /><br />
                         <p>Bồn cầu vệ sinh Hàn Quốc</p>
                     </a>
                 </div>
             </div>
-            <a href="#" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Xem thêm</a>
+            <a href="@Url.Action("Loaisanpham","Home")" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Xem thêm</a>
         </div>
 
         <!--Thiết bị nhà tắm-->
@@ -131,31 +133,31 @@
             </div>
             <div class="cacsanpham col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="sp-1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/nhatam-1.png" alt="" /><br />
                         <p>Bồn tắm kiểu Mỹ 1m8</p>
                     </a>
                 </div>
                 <div class="sp-2 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/nhatam-2.png" alt="" /><br />
                         <p>Bồn tắm nằm kiểu Hàn Quốc</p>
                     </a>
                 </div>
                 <div class="sp-3 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/nhatam-1.png" alt="" /><br />
                         <p>Bồn tắm kiểu Mỹ 1m8</p>
                     </a>
                 </div>
                 <div class="sp-4 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/nhatam-2.png" alt="" /><br />
                         <p>Bồn tắm nằm kiểu Hàn Quốc</p>
                     </a>
                 </div>
             </div>
-            <a href="#" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Xem thêm</a>
+            <a href="@Url.Action("Loaisanpham","Home")" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Xem thêm</a>
         </div>
 
         <!--Tranh 3D-->
@@ -165,31 +167,31 @@
             </div>
             <div class="cacsanpham col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="sp-1 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/tranh3d-1.png" alt="" /><br />
                         <p>Bộ 3 Bình cổ 3D</p>
                     </a>
                 </div>
                 <div class="sp-2 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/tranh3d-2.png" alt="" /><br />
                         <p>Bộ 3 Hoa mai 3D</p>
                     </a>
                 </div>
                 <div class="sp-3 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/tranh3d-1.png" alt="" /><br />
                         <p>Bộ 3 Bình cổ 3D</p>
                     </a>
                 </div>
                 <div class="sp-4 col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                    <a href="#">
+                    <a href="#" data-toggle="modal" data-target="#myModal">
                         <img src="~/images/sanpham/tranh3d-2.png" alt="" /><br />
                         <p>Bộ 3 Hoa mai 3D</p>
                     </a>
                 </div>
             </div>
-            <a href="#" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Xem thêm</a>
+            <a href="@Url.Action("Loaisanpham","Home")" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">Xem thêm</a>
         </div>
     </article>
 </section>
