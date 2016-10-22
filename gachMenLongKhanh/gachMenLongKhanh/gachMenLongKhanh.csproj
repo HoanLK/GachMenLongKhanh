@@ -273,10 +273,12 @@
     <Content Include="images\trangchu\doitac-3.png" />
     <Content Include="images\trangchu\huongdanlapdat.png" />
     <Content Include="images\trangchu\khonggiandep.png" />
+    <Content Include="images\trangchu\line-bottom.png" />
     <Content Include="images\trangchu\product-gachmen.png" />
     <Content Include="images\trangchu\product-thietbinhatam.png" />
     <Content Include="images\trangchu\product-thietbiwc.png" />
     <Content Include="images\trangchu\product-tranh3d.png" />
+    <Content Include="images\trangchu\star.png" />
     <Content Include="images\trangchu\tamnhin.png" />
     <Content Include="images\trangchu\tuvan.png" />
     <Content Include="Content\tuvan.css" />
@@ -287,10 +289,11 @@
     <Content Include="images\tuvan\baivietlienquan-4.png" />
     <Content Include="images\tuvan\banner-bg.png" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Front\loaisanpham.js" />
     <Content Include="Scripts\jquery-3.1.1.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\modernizr.custom.js" />
-    <Content Include="Scripts\trangchu\jquery.dlmenu.js" />
+    <Content Include="Scripts\Front\jquery.dlmenu.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
