@@ -225,6 +225,10 @@
                     height: 40em;
                 }
 
+                click-img{
+                    z-index: 2;
+                }
+
             /*Ảnh bên*/
             .loaisanpham > .bosutap > div > .sub {
                 width: 40%;

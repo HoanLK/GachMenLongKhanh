@@ -30,3 +30,15 @@ $(function () {
     });
 });
 
+/*Bộ sưu tập*/
+$(document).ready(function () {
+    $(".sub").click(function (index, element) {
+        console.log($(this));
+        if ($(this).attr("id") != null) {
+            $("#main").css("display", "none");
+            var srcCurrent = $(this).find("img").attr("src");
+            $("#main").attr("src", srcCurrent);
+            $("#main").fadeIn();
+        }
+    });
+});
