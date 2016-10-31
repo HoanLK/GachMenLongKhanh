@@ -47,7 +47,14 @@
                 <li><a href="@Url.Action("Index","Home")">Trang chủ</a></li>
             </ul>
             <!--Nút tìm kiếm-->
-            <a href="#" class="col-md-1 col-lg-1"><img src="~/images/header-footer/search-icon.png" alt="" /></a>
+            <div class="search">
+                <a href="#" id="button" class="button col-md-1 col-lg-1 fa fa-search"></a>
+                <div id="search-box">
+                    <input type="text" value="" placeholder="Nhập thông tin cần tìm kiếm...." />
+                    <a href="#" class="fa fa-search"></a>
+                </div>
+            </div>
+            
         </div>
 
         <!--Giao diện menu trên điện thoại-->
@@ -164,6 +171,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
+    <script src="~/Scripts/Front/header-footer.js"></script>
     <script src="~/Scripts/Front/jquery.dlmenu.js"></script>
     <script src="~/Scripts/Front/trangchu.js"></script>
     <script src="~/Scripts/Front/loaisanpham.js"></script>

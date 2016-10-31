@@ -1,4 +1,10 @@
-﻿$(document).ready(function () {
+﻿/*Hiển thị chữ trên banner*/
+$(document).ready(function () {
+    $('#text').fadeIn(700);
+});
+
+/*Hiện dần từng thành phần trong trang*/
+$(document).ready(function () {
     var toggled = false;
     $(window).scroll(function () {
         $('#prod, #vis').each(function (i) {
