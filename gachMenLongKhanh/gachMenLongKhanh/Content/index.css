@@ -847,7 +847,7 @@
     }
 
         .index > .ban > .text > .line-1 {
-            font-size: 7em;
+            font-size: 6em;
             padding: 0;
             margin: 1em 0 0 0;
         }
@@ -1065,12 +1065,12 @@
         }
 
             .index > .ban > .text > .line-1 {
-                font-size: 3em;
+                font-size: 2em;
                 margin: 1em 0em 0em 0em;
             }
 
             .index > .ban > .text > .line-2 {
-                font-size: 2em;
+                font-size: 1.5em;
             }
 
     /*Sản phẩm và tầm nhìn*/
